@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Invitation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white !important;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+            .button:hover {
+                background-color: #45a049;
+            }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 10px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #888888;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: #f4f4f4; padding: 40px;">
+
+    <div class="container">
+        <h2>Email Verification For Registration</h2>
+        <p>Hello,</p>
+        <p>Welcome! Thank you for joining us. Please click the button below to verify your account.</p>
+
+        <p style="text-align: center; margin: 30px 0;">
+            <a href="{{url}}/{{verificationId}}" class="button">Verify</a>
+        </p>
+
+        <p>This link is valid for a limited time. Please contact us if you encounter any problems.</p>
+
+        <div class="footer">
+            This email was sent automatically by the system.
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PMS.Application\PMS.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PMS.Core.Mailing">
+      <HintPath>..\..\PMS.Core.Packages\PMS.Core.Mailing\bin\Debug\net8.0\PMS.Core.Mailing.dll</HintPath>
+    </Reference>
+    <Reference Include="PMS.Core.Persistence">
+      <HintPath>..\..\PMS.Core.Packages\PMS.Core.Persistence\bin\Debug\net8.0\PMS.Core.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="PMS.Core.Security">
+      <HintPath>..\..\PMS.Core.Packages\PMS.Core.Security\bin\Debug\net8.0\PMS.Core.Security.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

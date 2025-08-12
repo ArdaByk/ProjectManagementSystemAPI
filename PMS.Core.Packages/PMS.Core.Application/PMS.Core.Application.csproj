@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="MediatR" Version="13.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="9.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Persistence\PMS.Core.Persistence.csproj" />
+    <ProjectReference Include="..\Core.Security\PMS.Core.Security.csproj" />
+    <ProjectReference Include="..\PMS.Core.CrossCuttingConcerns.Abstractions\PMS.Core.CrossCuttingConcerns.Logging.Abstractions.csproj" />
+    <ProjectReference Include="..\PMS.Core.CrossCuttingConcerns.Exceptions\PMS.Core.CrossCuttingConcerns.Exceptions.csproj" />
+    <ProjectReference Include="..\PMS.Core.CrossCuttingConcerns.Logging\PMS.Core.CrossCuttingConcerns.Logging.csproj" />
+    <ProjectReference Include="..\PMS.Core.Persistence\PMS.Core.Persistence.csproj" />
+    <ProjectReference Include="..\PMS.Core.Security\PMS.Core.Security.csproj" />
+  </ItemGroup>
+
+</Project>

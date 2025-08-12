@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="9.0.8" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.13.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PMS.Application\PMS.Application.csproj" />
+    <ProjectReference Include="..\PMS.Infrastructure\PMS.Infrastructure.csproj" />
+    <ProjectReference Include="..\PMS.Persistence\PMS.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PMS.Core.Application">
+      <HintPath>..\..\PMS.Core.Packages\PMS.Core.Application\bin\Debug\net8.0\PMS.Core.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="PMS.Core.CrossCuttingConcerns.Exceptions.WebAPI">
+      <HintPath>..\..\PMS.Core.Packages\PMS.Core.CrossCuttingConcerns.Exceptions.WebAPI\bin\Debug\net8.0\PMS.Core.CrossCuttingConcerns.Exceptions.WebAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="PMS.Core.CrossCuttingConcerns.Logging.Abstractions">
+      <HintPath>..\..\PMS.Core.Packages\PMS.Core.CrossCuttingConcerns.Abstractions\bin\Debug\net8.0\PMS.Core.CrossCuttingConcerns.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PMS.Core.CrossCuttingConcerns.Logging.DependencyInjection">
+      <HintPath>..\..\PMS.Core.Packages\PMS.Core.CrossCuttingConcerns.Logging.DependencyInjection\bin\Debug\net8.0\PMS.Core.CrossCuttingConcerns.Logging.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="PMS.Core.Security">
+      <HintPath>..\..\PMS.Core.Packages\PMS.Core.Security\bin\Debug\net8.0\PMS.Core.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="PMS.Core.Security.DependencyInjection">
+      <HintPath>..\..\PMS.Core.Packages\PMS.Core.Security.DependencyInjection\bin\Debug\net8.0\PMS.Core.Security.DependencyInjection.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
